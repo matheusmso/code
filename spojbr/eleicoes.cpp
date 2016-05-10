@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int n, maxindex = 0, max = 1;
-    map<int, int> m;
+    unordered_map<int, int> m;
     scanf("%d", &n);
     for (int i = 0; i < n; i++) {
         int x;
