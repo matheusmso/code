@@ -33,5 +33,6 @@ int main() {
         }
     }
     printf("%d\n", components);
+    return 0;
 }
 
