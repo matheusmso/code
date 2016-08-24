@@ -20,15 +20,12 @@ int main() {
             if (i+z[i]-1 > r)
                 l = i, r = i+z[i]-1;
         }
-        int ans = n;
-        for (int i = 1; i < n; i++) {
-            if (z[i] && n%i == 0) {
-                int j;
-                for (j = i; j < n && z[j] >= i; j += i);
-                if (j >= n) {
-                    ans = i;
-                    break;
-                }
+        z[n] = 0;
+        int ans;
+        for (int i = 1; i <= n; i++) {
+            if (n%i == 0 && i+z[i] == n) {
+                ans = i;
+                break;
             }
         }
         printf("%d\n", ans);
