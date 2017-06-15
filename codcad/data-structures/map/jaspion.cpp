@@ -16,16 +16,21 @@ int main() {
             scanf(" %[^\n]", s);
             string b(s);
             ma[a] = b;
-            cout << a << endl << b << endl;
         }
         while (n--) {
-            scanf(" %s", s);
-            string a(s);
-            if (ma.count(a))
-                cout << ma[a] << endl;
-            else
-                cout << a <<
+            scanf(" %[^\n]", s);
+            char *t = strtok(s, " ");
+            while (t != NULL) {
+                string a(t);
+                if (ma.count(a))
+                    cout << ma[a] << " ";
+                else
+                    cout << a << " ";
+                t = strtok(NULL, " ");
+            }
+            cout << endl;
         }
+        cout << endl;
     }
     return 0;
 }
