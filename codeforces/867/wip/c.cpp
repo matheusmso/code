@@ -14,7 +14,7 @@ int main() {
     }
     priority_queue<pair<pair<lint, lint>, int>> pq;
     for (int i = 0; i < n; i++) {
-        if (abs(a[i]-b[i]) != 0)
+        //if (abs(a[i]-b[i]) != 0)
             pq.push({{abs(a[i]-b[i]), s[i]}, i});
     }
     lint pizzas = sum/S + (sum%S != 0);
@@ -79,10 +79,10 @@ int main() {
             }
         }
     }
-    for (int i = 0; i < n; i++)
+    /*for (int i = 0; i < n; i++)
         if (abs(a[i]-b[i]) == 0) {
             ans += s[i]*a[i];
-        }
+            }*/
     printf("%lld\n", ans);
     return 0;
 }
