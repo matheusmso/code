@@ -25,25 +25,36 @@ int dfs(int v) {
 
 int main() {
     scanf(" %d %d", &n, &q);
+    
     for (int i = 2; i <= n; i++) {
         int x;
         scanf(" %d", &x);
         adj[x].push_back(i);
     }
-    for (int i = 1; i <= n; i++)
-        scanf(" %c", &s[i]);
+    
+    scanf(" %s", s+1);
+    
     tin = 1;
     d[1] = 1;
     dfs(1);
+    
     for (int i = 0; i < 26; i++) 
-        for (int j = 1; j <= n; j++) 
+        for (int j = 1; j <= n; j++)
             if (s[j]-'a' == i) 
                 tree[i][d[j]].push_back(l[j]);
+    for (int i = 0; i < 26; i++)
+        for (int j = 1; j <= n; j++)
+            sort(tree[i][j].begin(), tree[i][j].end());
     for (int i = 1; i <= n; i++)
         r[i]++;
+    
     for (int i = 0; i < q; i++) {
         int x, y;
         scanf(" %d %d", &x, &y);
+        if (d[x] >= y) {
+            printf("Yes\n");
+            continue;
+        }
         int odds = 0;
         for (int j = 0; j < 26 && odds < 2; j++) {
             int cnt = lower_bound(tree[j][y].begin(), tree[j][y].end(), r[x]) - 
