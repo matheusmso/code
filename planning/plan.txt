@@ -1,0 +1,23 @@
+Semestre 1 - 2018:
+
+MAC0210 - Laboratório de Métodos Numéricos
+FLC0474 - Lingua Portuguesa
+MAC0499 - Trabalho de Formatura Supervisionado
+MAE0228 - Noções de Probabilidade e Processos Estocásticos
+MAC0215 - Atividade Curricular em Pesquisa
+MAC0218 - Técnicas de Programação II
+Total: 4 + 3 + 4 + 4 = 15 créditos-aula
+
+Semestre 2 - 2018:
+MAC0414 - Autômatos, Computabilidade e Complexidade
+MAC0214 - Atividade Curricular em Cultura e Extensão
+MAC0413 - Tópicos Avançados de Programação Orientada a Objetos
+MAC0465 - Biologia Computacional
+
+Total: 4 + 4 + 4 = 12 créditos-aula
+
+Semestre 1 - 2019:
+MAC0472 - Laboratório de Métodos Ágeis
+MAC0463 - Computação Móvel
+Total: 4 + 4 = 8 créditos-aula
+
