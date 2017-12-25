@@ -1,0 +1,5 @@
+z=: suggested words
+]s: next wrong word
+[s: previous wrong word
+zg: add to good dictionary
+zw: add to bad/wrong dictionary
